@@ -12,12 +12,75 @@
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
-    <script src="js/application.js"></script>
+    <script src="js/application.js"></script> <!--v3.3.1-->
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
+    <h1>Shopping Cart</h1>
 
+    <table>
+      <caption>Shopping Cart Items</caption>
+      <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Salmon</th>
+          <td>$60.00</td>
+          <td>>1</td>
+          <td>$60.00</td>
+          <td><button class="btn btn-light btn-sm remove">cancel</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Tuna</th>
+          <td>$50.00</td>
+          <td>3</td>
+          <td>$150.00</td>
+          <td><button class="btn btn-light btn-sm remove">cancel</button></td>
+        </tr>
+        
+        <tr>
+          <th scope="row">Carp</th>
+          <td>$40.00</td>
+          <td>2</td>
+          <td>$80.00</td>
+          <td><button class="btn btn-light btn-sm remove">cancel</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Pork</th>
+          <td>$50.00</td>
+          <td>2</td>
+          <td>$100.00</td>
+          <td><button class="btn btn-light btn-sm remove">cancel</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Beef</th>
+          <td>$40.00</td>
+          <td>4</td>
+          <td>$160.00</td>
+          <td><button class="btn btn-light btn-sm remove">cancel</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+    <div class="total">
+      <button class="btn btn-light btn-sm">Add item</button>
+      <button class="btn btn-success">Calculate Prices</button>
+      
+      <h2>Total Price:</h2>
+      <h2 class="totalPrice">$550.00</h2>
+    </div>
   </body>
 </html>

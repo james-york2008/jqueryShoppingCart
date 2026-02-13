@@ -7,8 +7,8 @@ $(document).ready(function() {
 
     var totalPrice = 0
     $('tbody tr').each(function() {
-        let price = $(this).find('.itemPrice').text().replace('$', '')
-        let quantity = $(this).find('.quantity').text()
+        let price = $(this).find('.itemPrice').text()
+        let quantity = $(this).find('.quantity').val()
         let subtotal = calculateSubTotal(price, quantity)
 
         $(this).find('.itemSubTotal').text(subtotal)
@@ -35,7 +35,7 @@ $(document).ready(function() {
         $('tbody').append('<tr>' +
           '<th scope="row">' + name + '</th>' +
           '<td class="itemPrice">' + price + '</td>' +
-          '<td class="quantity">' + quantity + '</td>' + 
+          '<td><input type="number" class="quantity" value="' + quantity + '"min="0"></td>' + 
           '<td class="itemSubTotal">' + itemSubTotal + '</td>' +
           '<td><button class="btn btn-light btn-sm remove">cancel</button></td>' +
         '</tr>')
@@ -44,8 +44,8 @@ $(document).ready(function() {
     $('#calculatePrice').on('click', function() {
         totalPrice = 0
         $('tbody tr').each(function() {
-            let price = $(this).find('.itemPrice').text().replace('$', '')
-            let quantity = $(this).find('.quantity').text()
+            let price = $(this).find('.itemPrice').text()
+            let quantity = $(this).find('.quantity').val()
             let subtotal = calculateSubTotal(price, quantity)
 
             $(this).find('.itemSubTotal').text(subtotal)
@@ -54,6 +54,7 @@ $(document).ready(function() {
         })        
         $('.totalPrice').text('$' + totalPrice)
     })
+
 })
 
 

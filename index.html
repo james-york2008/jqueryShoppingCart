@@ -20,6 +20,7 @@
   <body>
     <h1>Shopping Cart</h1>
 
+    
     <table>
       <thead>
         <tr>
@@ -34,7 +35,7 @@
         <tr>
           <th scope="row">Salmon</th>
           <td class="itemPrice">60.00</td>
-          <td class="quantity">1</td>
+          <td><input type="number" class="quantity" value="1" min="1"></td>       
           <td class="itemSubTotal"></td>
           <td><button class="btn btn-light btn-sm remove">cancel</button></td>
         </tr>
@@ -42,7 +43,7 @@
         <tr>
           <th scope="row">Tuna</th>
           <td class="itemPrice">50.00</td>
-          <td class="quantity">3</td>
+          <td><input type="number" class="quantity" value="3" min="1"></td>       
           <td class="itemSubTotal"></td>
           <td><button class="btn btn-light btn-sm remove">cancel</button></td>
         </tr>
@@ -50,7 +51,7 @@
         <tr>
           <th scope="row">Carp</th>
           <td class="itemPrice">40.00</td>
-          <td class="quantity">2</td>
+          <td><input type="number" class="quantity" value="2" min="1"></td>       
           <td class="itemSubTotal"></td>
           <td><button class="btn btn-light btn-sm remove">cancel</button></td>
         </tr>
@@ -58,7 +59,7 @@
         <tr>
           <th scope="row">Pork</th>
           <td class="itemPrice">50.00</td>
-          <td class="quantity">2</td>
+          <td><input type="number" class="quantity" value="2" min="1"></td>       
           <td class="itemSubTotal"></td>
           <td><button class="btn btn-light btn-sm remove">cancel</button></td>
         </tr>
@@ -66,13 +67,12 @@
         <tr>
           <th scope="row">Beef</th>
           <td class="itemPrice">40.00</td>
-          <td class="quantity">4</td>
+          <td><input type="number" class="quantity" value="4" min="1"></td>       
           <td class="itemSubTotal"></td>
           <td><button class="btn btn-light btn-sm remove">cancel</button></td>
         </tr>
       </tbody>
     </table>
-
     
     <div class="total">
       <form class="newItem">
